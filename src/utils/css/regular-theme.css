@@ -1,0 +1,7 @@
+/*Ant styling class*/
+
+.ant-menu-title-content,.ant-menu-submenu-title{
+ display: flex;
+ align-items: center;
+}
+
