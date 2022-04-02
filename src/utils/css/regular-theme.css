@@ -1,0 +1,83 @@
+/*Ant styling class*/
+
+.ant-menu-title-content,.ant-menu-submenu-title{
+ display: flex;
+ align-items: center;
+}
+
+.ant-btn-primary{
+    background: hsl(209deg 100% 55%) !important;
+}
+
+
+.side-nav {
+    height: calc(100vh - 60px);
+    position: fixed;
+    top: 65px;
+     box-shadow: 0 1px 4px -1px rgb(0 0 0 / 15%);
+    z-index: 999;
+    direction: ltr;
+    background-color: hsl(0deg 0% 100%);
+    overflow-y: overlay;
+   
+}
+/* scrollbar pour forefox */
+
+@-moz-document url-prefix() {
+    .side-nav {
+        overflow-y: scroll;
+        scrollbar-width: none;
+        scrollbar-color: gray transparent;
+    }
+    }
+.side-nav::-webkit-scrollbar{
+  
+    display: none;
+  
+}
+.side-nav:hover::-webkit-scrollbar{
+    width: 2px;
+    display: block;
+  
+}
+
+.side-nav::-webkit-scrollbar-track{
+    background: transparent;
+ 
+}
+.side-nav::-webkit-scrollbar-thumb{
+
+    background-color: rgb(216, 216, 216);
+    border-radius: 20px;
+    height: 50vh;
+    
+}
+   .app-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 4px -1px rgb(0 0 0 / 15%);
+    }
+    .app-content{
+
+        padding: 25px;
+        padding-bottom: 0;
+        margin-top: 40px;
+        min-height: calc(100vh - 115px);
+        position: relative;
+    }
+    .collapsed{
+        padding-left:215px ;
+    }
+    .no-collapsed{
+        padding-left: 80px;
+    }
+   
+
+    @media only screen and (max-width: 1024px) {
+       .collapsed,.no-collapsed{
+           padding-left: 0;
+       }
+      }
